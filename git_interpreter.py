@@ -8,5 +8,5 @@ def execute_git_command(command):
         return e.stderr
 
 if __name__ == '__main__':
-    # Example usage: print the status of the git repository
-    print(execute_git_command('status'))
+    # Example usage: list all branches
+    print(execute_git_command('branch'))
