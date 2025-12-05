@@ -8,5 +8,6 @@ def execute_git_command(command):
         return e.stderr
 
 if __name__ == '__main__':
-    # Example usage: list all branches
+        # Example usage: create a new branch
+    print(execute_git_command('checkout -b new-branch'))
     print(execute_git_command('branch'))
