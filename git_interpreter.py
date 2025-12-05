@@ -8,7 +8,7 @@ def execute_git_command(command):
         return e.stderr
 
 def create_dynamic_session_branch():
-    return execute_git_command('checkout -b dynamic-session-branch')
+    return execute_git_command('checkout -b azure-dynamic-session')
 
 def list_branches():
     return execute_git_command('branch')
