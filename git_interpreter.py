@@ -7,7 +7,12 @@ def execute_git_command(command):
     except subprocess.CalledProcessError as e:
         return e.stderr
 
+def create_dynamic_session_branch():
+    return execute_git_command('checkout -b dynamic-session-branch')
+
+def list_branches():
+    return execute_git_command('branch')
+
 if __name__ == '__main__':
-            # Example usage: create a new branch
-    print(execute_git_command('checkout -b dynamic-session-branch'))
-    print(execute_git_command('branch'))
+    print(create_dynamic_session_branch())
+    print(list_branches())
